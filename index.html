@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Music Player</title>
+        <link rel="icon" href="play-button.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/72c6db1db0.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+    <body class="container">
+        <div class="musicplayer">
+            <div class="content1" id="center">
+                <div class="actualdisk outerone" id="center">
+                    <div class="actualdisk innerone" id="center">
+                        <div class="blankspace" id="center"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="screen">
+                <div class="titles"></div>
+                
+            </div>
+            <audio  id="song">
+                <source src="gDilijit Dosanjh - Lalkaara.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="songbar">
+            <div class="navbar">
+                <div class="back circle" tabindex="0">
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <div class="play circle" style="transform:scale(1.25);" tabindex="0">
+                    <i style="position:relative; right:0px;" class="fa-solid fa-play"></i>
+                </div>
+                <div class="forward circle" tabindex="0">
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
